@@ -16,6 +16,42 @@ const questions = [
     name: 'description',
     message: 'Provide a brief description of your project: ',
   },
+  {
+    type: 'input',
+    name: 'Table of Contents',
+    message: 'Provide a : ',
+  },
+  {
+    type: 'input',
+    name: 'Installation',
+    message: 'Provide a brief description of your project: ',
+  },
+  {
+    type: 'input',
+    name: 'usage',
+    message: 'Provide a brief description of your project: ',
+  },
+  {
+    type: 'input',
+    name: 'license',
+    message: 'Provide a brief description of your project: ',
+  },
+  {
+    type: 'input',
+    name: 'Contributing',
+    message: 'Provide a brief description of your project: ',
+  },
+  {
+    type: 'input',
+    name: 'tests',
+    message: 'Provide a brief description of your project: ',
+  },
+  {
+    type: 'input',
+    name: 'questions',
+    message: 'Provide a brief description of your project: ',
+  },
+  
   // Add more questions for user input as needed
 ];
 
