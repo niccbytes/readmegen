@@ -19,37 +19,33 @@ const questions = [
   {
     type: 'input',
     name: 'Table of Contents',
-    message: 'Provide a : ',
+    message: 'Provide a table of contents: ',
   },
   {
     type: 'input',
     name: 'Installation',
-    message: 'Provide a brief description of your project: ',
+    message: 'how do i install this application: ',
   },
   {
     type: 'input',
     name: 'usage',
-    message: 'Provide a brief description of your project: ',
+    message: 'what is this used for?: ',
   },
-  {
-    type: 'input',
-    name: 'license',
-    message: 'Provide a brief description of your project: ',
-  },
+
   {
     type: 'input',
     name: 'Contributing',
-    message: 'Provide a brief description of your project: ',
+    message: 'provide contributions: ',
   },
   {
     type: 'input',
     name: 'tests',
-    message: 'Provide a brief description of your project: ',
+    message: 'Provide any tests: ',
   },
   {
     type: 'input',
     name: 'questions',
-    message: 'Provide a brief description of your project: ',
+    message: 'Provide any questions: ',
   },
   
   // Add more questions for user input as needed
