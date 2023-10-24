@@ -9,7 +9,6 @@ function renderLicenseBadge(license) {
       return '';
   }
 }
-
 function renderLicenseLink(license) {
   switch (license) {
     case 'MIT':
@@ -21,28 +20,32 @@ function renderLicenseLink(license) {
       return '';
   }
 }
-
 function renderLicenseSection(license) {
   if (license) {
     return `This project is licensed under the [${license} License](${renderLicenseLink(license)}).`;
   } else {
-    return ''; // No license provided
+    return 'No license provided';
   }
 }
-
 function generateMarkdown(data) {
   return `# ${data.title}
-
 ${renderLicenseBadge(data.license)}
-
 ## Description
-
 ${data.description}
-
+## Table Of Contents
+${(data.tableofcontents)}
+## Installation
+${(data.installations)}
+## Usage
+${(data.usage)}
 ## License
-
 ${renderLicenseSection(data.license)}
+## Contributing
+${(data.contributing)}
+## Tests
+${(data.tests)}
+## Questions
+${(data.questions)}
 `;
 }
-
 module.exports = generateMarkdown;
