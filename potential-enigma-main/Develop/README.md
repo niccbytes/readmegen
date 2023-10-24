@@ -1,18 +1,23 @@
-# diajn
-
+# dwawd
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ## Description
-dnwaind
+wadwda
 ## Table Of Contents
 undefined
 ## Installation
-ikdnwaopdnaw
+wda
 ## Usage
-onwdsaondaw
+wda
 ## License
-No license provided
+This project is licensed under the [MIT License]([MIT License](https://opensource.org/licenses/MIT)).
 ## Contributing
-indkwaeo
+wdwdf
 ## Tests
-dnjwiaop
+efe
 ## Questions
-daownwa
+adfwd
+## github
+You can find my GitHub profile [here](https://github.com/nick).
+## email
+You can contact me via email at [nickmail](mailto:nickmail).
+

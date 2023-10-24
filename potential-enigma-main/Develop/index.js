@@ -2,7 +2,8 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown'); // Import the generateMarkdown function
-// TODO: Create an array of questions for user input - a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+
+// TODO: Create an array of questions for user input
 const questions = [
   {
     type: 'input',
@@ -16,7 +17,7 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'table of contents',
+    name: 'tableOfContents', // Fix the name with spaces
     message: 'Provide a table of contents for your project: ',
   },
   {
@@ -44,8 +45,25 @@ const questions = [
     name: 'questions',
     message: 'Provide any questions: ',
   },
+  {
+    type: 'list',
+    name: 'license',
+    message: 'Choose a license: ',
+    choices: ['MIT', 'GNU GPLv3', 'other']
+  },
+  {
+    type: 'input',
+    name: 'github',
+    message: 'Provide your github: ',
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'Provide your email: ',
+  },
 ];
-// TODO: Create a function to write README file-
+
+// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
   // Use the fs module to write the data to a file with the given filename
   fs.writeFile(fileName, data, (err) => {
@@ -56,7 +74,8 @@ function writeToFile(fileName, data) {
     }
   });
 }
-// TODO: Create a function to initialize app
+
+// TODO: Create a function to initialize the app
 function init() {
   inquirer.prompt(questions).then((answers) => {
     // Generate the README content using the answers
@@ -67,5 +86,6 @@ function init() {
     writeToFile(fileName, readmeContent);
   });
 }
-// Function call to initialize app
+
+// Function call to initialize the app
 init();

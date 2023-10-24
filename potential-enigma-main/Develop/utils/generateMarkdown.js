@@ -27,6 +27,9 @@ function renderLicenseSection(license) {
     return 'No license provided';
   }
 }
+
+
+
 function generateMarkdown(data) {
   return `# ${data.title}
 ${renderLicenseBadge(data.license)}
@@ -46,6 +49,11 @@ ${(data.contributing)}
 ${(data.tests)}
 ## Questions
 ${(data.questions)}
+## github
+You can find my GitHub profile [here](https://github.com/${data.github}).
+## email
+You can contact me via email at [${data.email}](mailto:${data.email}).
+
 `;
 }
 module.exports = generateMarkdown;
