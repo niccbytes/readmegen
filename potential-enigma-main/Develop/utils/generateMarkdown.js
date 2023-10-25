@@ -44,7 +44,6 @@ ${data.description}
 - [questions](#questions)
 - [github](#github)
 - [email](#email)
-${(data.tableofcontents)}
 ## Installation
 ${(data.installations)}
 ## Usage
